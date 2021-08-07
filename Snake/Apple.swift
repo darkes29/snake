@@ -15,7 +15,10 @@ class Apple: SKShapeNode {
         fillColor = UIColor.red
         strokeColor = .red
         lineWidth = 5
-        self.position = position 
+        self.position = position
+        
+        self.physicsBody = SKPhysicsBody(circleOfRadius: 8.0, center: CGPoint(x: 5, y: 5))
+        self.physicsBody?.categoryBitMask = CollisionCategary.Apple
     }
     
     required init?(coder aDecoder: NSCoder) {
