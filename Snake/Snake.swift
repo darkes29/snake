@@ -66,5 +66,3 @@ class Snake: SKShapeNode {
         angle -= CGFloat(Double.pi / 2)
     }
 }
-
-
