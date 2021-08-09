@@ -18,6 +18,8 @@
 		3C79C2CE26B31CC6008B3830 /* SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79C2CD26B31CC6008B3830 /* SnakeUITests.swift */; };
 		3C79C2DC26B344FA008B3830 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79C2DB26B344FA008B3830 /* Apple.swift */; };
 		3C79C2DE26B34507008B3830 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C79C2DD26B34507008B3830 /* Snake.swift */; };
+		3CCE7BDB26C04A0E00A3C173 /* StartGameScence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE7BDA26C04A0E00A3C173 /* StartGameScence.swift */; };
+		3CCE7BDD26C0516D00A3C173 /* GameoverGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE7BDC26C0516D00A3C173 /* GameoverGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		3C79C2CF26B31CC6008B3830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C79C2DB26B344FA008B3830 /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 		3C79C2DD26B34507008B3830 /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		3CCE7BDA26C04A0E00A3C173 /* StartGameScence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameScence.swift; sourceTree = "<group>"; };
+		3CCE7BDC26C0516D00A3C173 /* GameoverGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameoverGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				3C35BBED26BF0ED000D48C82 /* SnakeBodyPart.swift */,
 				3C35BBEF26BF10A300D48C82 /* SnakeHead.swift */,
 				3C79C2B226B31CC3008B3830 /* GameViewController.swift */,
+				3CCE7BDA26C04A0E00A3C173 /* StartGameScence.swift */,
+				3CCE7BDC26C0516D00A3C173 /* GameoverGameScene.swift */,
 				3C79C2B426B31CC3008B3830 /* Main.storyboard */,
 				3C79C2B726B31CC5008B3830 /* Assets.xcassets */,
 				3C79C2B926B31CC5008B3830 /* Info.plist */,
@@ -266,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCE7BDD26C0516D00A3C173 /* GameoverGameScene.swift in Sources */,
 				3C79C2DC26B344FA008B3830 /* Apple.swift in Sources */,
+				3CCE7BDB26C04A0E00A3C173 /* StartGameScence.swift in Sources */,
 				3C79C2B126B31CC3008B3830 /* GameScene.swift in Sources */,
 				3C79C2DE26B34507008B3830 /* Snake.swift in Sources */,
 				3C35BBEE26BF0ED000D48C82 /* SnakeBodyPart.swift in Sources */,

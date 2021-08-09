@@ -18,7 +18,7 @@ struct CollisionCategary {
 
 
 class GameScene: SKScene {
-    var ScoreValue = 0
+    static var ScoreValue = 0
     var snake: Snake?
     var gameScore: SKLabelNode!
     
@@ -48,7 +48,7 @@ class GameScene: SKScene {
         clockButton.name = "clockButton"
         self.addChild(clockButton)
         
-        gameScore = SKLabelNode(text: "Score: \(ScoreValue)")
+        gameScore = SKLabelNode(text: "Score: \(GameScene.ScoreValue)")
         gameScore.name = "gameScore"
         gameScore.fontColor = .white
         gameScore.fontSize = 30.0
@@ -132,12 +132,12 @@ extension GameScene: SKPhysicsContactDelegate {
             let apple = contact.bodyA.node is Apple ? contact.bodyA.node : contact.bodyB.node
             snake?.addBodyPart()
             apple?.removeFromParent()
-            self.ScoreValue += 1
-            self.gameScore!.text = "Score: \(ScoreValue)"
+            GameScene.ScoreValue += 1
+            self.gameScore!.text = "Score: \(GameScene.ScoreValue)"
             
             createApple()
         case CollisionCategary.EdgeBody:
-            let scene = GameScene(size: self.size) // Whichever scene you want to restart (and are in)
+            let scene = GameoverGameScene(size: self.size) // Whichever scene you want to restart (and are in)
             let animation = SKTransition.crossFade(withDuration: 0.8) // ...Add transition if you like
             self.view?.presentScene(scene, transition: animation)
         default:
